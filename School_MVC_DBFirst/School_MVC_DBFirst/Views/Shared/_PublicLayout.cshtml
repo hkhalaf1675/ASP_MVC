@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/BootstrapCss")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">
+                            Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Student/Index">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Instructors/Index">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Course/Index">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Departments/Index">Departments</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div>
+            @RenderBody()
+        </div>
+
+    </main>
+    @Scripts.Render("~/BootstrapJs")
+    @RenderSection("ValidationScripts",false)
+</body>
+</html>

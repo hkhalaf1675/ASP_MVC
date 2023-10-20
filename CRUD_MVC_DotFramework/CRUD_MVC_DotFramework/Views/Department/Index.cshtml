@@ -1,0 +1,41 @@
+﻿@model List<CRUD_MVC_DotFramework.Models.Department>
+@{
+    ViewBag.Title = "All Departments";
+}
+
+<h2>Index</h2>
+<div class="container">
+    <a href="/Department/Create" class="btn btn-success w-100">Add New Department</a>
+    @if (Model.Count == 0)
+    {
+        <div class="alert alert-dismissible alert-light">
+            There is No Departments
+            To Add New One <a href="#" class="alert-link">Click here</a>
+        </div>
+    }
+    else
+    {
+        <table class="table">
+            <tr>
+                <th>SSN</th>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Level</th>
+                <th></th>
+                <th></th>
+            </tr>
+            @{
+                foreach (var dept in Model)
+                {
+                    <tr>
+                        <td>@dept.DepartmentId</td>
+                        <td>@dept.DeptName</td>
+                        <td>@dept.ManagerID</td>
+                        @Html.Partial("_ButtonUpdateDeletePartialView", dept.DepartmentId)
+                    </tr>
+                }
+            }
+        </table>
+    }
+</div>
+

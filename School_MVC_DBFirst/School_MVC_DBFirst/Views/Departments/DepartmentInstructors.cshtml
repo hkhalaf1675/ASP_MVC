@@ -1,0 +1,23 @@
+﻿@model List<School_MVC_DBFirst.ViewModel.DepartmentInstructors>
+@{
+    ViewBag.Title = "DepartmentInstructors";
+    Layout = "~/Views/Shared/_PublicLayout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    Html.Display(item.Name);
+    if (item.Instructors.Count != 0)
+    {
+        foreach (var item2 in item.Instructors)
+        {
+            <table class="table">
+                <tr>
+                    <td>@item2.Name</td>
+                    <td>@item2.Salary</td>
+                </tr>
+            </table>
+        }
+    }
+}
+

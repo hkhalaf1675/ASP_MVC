@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_SharedLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a class="btn btn-light list-group-item-primary d-flex justify-content-between align-items-center" href="/Intake/Index">
+                Intakes
+                <span class="badge bg-primary rounded-pill">@IntensiveCodeCamp.Models.BL.IntakeBL.AllIntakes().Count</span>
+            </a>
+        </li>
+        <li class="list-group-item ">
+            <a class="btn btn-light list-group-item-primary d-flex justify-content-between align-items-center" href="/Intake/Index">
+                Trackes
+                <span class="badge bg-primary rounded-pill">@IntensiveCodeCamp.Models.BL.TrackBL.AllTracks().Count</span>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="btn btn-light list-group-item-primary d-flex justify-content-between align-items-center" href="/Intake/Index">
+                Courses
+                <span class="badge bg-primary rounded-pill">@IntensiveCodeCamp.Models.BL.CourseBL.AllCourses().Count</span>
+            </a>
+        </li>
+    </ul>
+</div>

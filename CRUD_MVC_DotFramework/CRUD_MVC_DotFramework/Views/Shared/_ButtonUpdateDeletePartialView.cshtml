@@ -1,0 +1,8 @@
+﻿@model int
+
+<td>@Html.ActionLink("Update", "Update", null, new { id = Model }, new { @class = "btn btn-primary" }) </td>
+<td>
+    <button id="@Model" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        Delete
+    </button>
+</td>

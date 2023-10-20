@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All Instructors</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var instList = ViewData["instructors"] as List<MVC_Day2_CRUDWithBootstrap.Models.Instructor>;
+            foreach (var item in instList)
+            {
+                <tr>
+                    <th scope="row">@item.ID</th>
+                    <td>@item.Name</td>
+                    <td>@item.Department</td>
+                    <td>
+                        <a class="btn btn-primary" href="/Instructor/UpdateInst?id=@item.ID">Upadte</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" href="/Instructor/DeleteInst?id=@item.ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<a class="btn btn-success" href="/Instructor/AddInstructor">Add New Instructor</a>
+

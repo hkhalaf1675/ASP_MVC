@@ -1,0 +1,61 @@
+﻿@model List<IntensiveCodeCamp.Models.Entities.Track>
+@{
+    ViewBag.Title = "All Trackes";
+    Layout = "~/Views/Shared/_SharedLayout.cshtml";
+}
+
+<h2 class="text-center">All Trackes</h2>
+@if (TempData["AddedTrack"] != null)
+{
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>@TempData["AddedTrack"]</strong> was added successfully.
+    </div>
+}
+@if (TempData["UpdatedTrack"] != null)
+{
+    <div class="alert alert-dismissible alert-primary">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>@TempData["UpdatedTrack"]</strong> was Deleted successfully.
+    </div>
+}
+@if (TempData["DeletedTrack"] != null)
+{
+    <div class="alert alert-dismissible alert-danger">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>@TempData["DeletedTrack"]</strong> was added successfully.
+    </div>
+}
+@if (Model?.Count > 0)
+{
+    @Html.ActionLink("Create New Track", "Create", "Track", new { @class = "btn btn-success w-100" })
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Intake Round</th>
+            <th></th>
+            <th></th>
+        </tr>
+        @foreach (IntensiveCodeCamp.Models.Entities.Track track in Model)
+        {
+            <tr>
+                <td>@track.ID</td>
+                <td>@track.Name</td>
+                <td>@track.IntakeRound</td>
+                <td>
+                    @Html.ActionLink("Update", "Update", new { id = track.ID }, new { @class = "btn btn-primary" })
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = track.ID }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <div class="alert alert-dismissible alert-secondary">
+        <strong>There is no Trackes</strong> click <a href="/Track/Create" class="alert-link">here</a> to add new course
+    </div>
+}

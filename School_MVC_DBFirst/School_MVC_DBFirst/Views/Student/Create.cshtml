@@ -1,0 +1,38 @@
+﻿@model School_MVC_DBFirst.Models.Student
+@{
+    Layout = "~/Views/Shared/_PublicLayout.cshtml";
+    ViewBag.Title = "Create Student";
+}
+@using (Html.BeginForm("Create", "Student", FormMethod.Post))
+{
+    @Html.HiddenFor(S => S.Id)
+    <div class="form-group">
+        @Html.LabelFor(S => S.FName, new { @class = "form-label mt-4" })
+        @Html.TextBoxFor(S => S.FName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(S => S.FName, null, new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(S => S.LName, new { @class = "form-label mt-4" })
+        @Html.TextBoxFor(S => S.LName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(S => S.LName, null, new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(S => S.BirthDate, new { @class = "form-label mt-4" })
+        @Html.EditorFor(S => S.BirthDate, new { @class = "form-control mx-4" })
+        @Html.ValidationMessageFor(S => S.BirthDate, null, new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(S => S.Address, new { @class = "form-label mt-4" })
+        @Html.TextBoxFor(S => S.Address, new { @class = "form-control" })
+        @Html.ValidationMessageFor(S => S.Address, null, new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.Label("Perfer Course", new { @class = "form-label mt-4" })
+        @Html.DropDownList("PerferCourses", null, new { @class = "form-select" })
+    </div>
+    <button type="submit" class="btn btn-success my-4 w-100">Add</button>
+}
+
+@section ValidationScripts{
+    @Scripts.Render("~/ValidationJs");
+}

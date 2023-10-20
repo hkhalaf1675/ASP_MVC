@@ -1,0 +1,12 @@
+﻿@model CRUD_MVC_DotFramework.Models.Department
+
+<div class="form-group">
+    @Html.LabelFor(model => model.DeptName)
+    @Html.EditorFor(model => model.DeptName, new { htmlAttributes = new { @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.DeptName)
+</div>
+<hr />
+<div class="form-group">
+    @Html.LabelFor(model => model.Manager)
+    @Html.DropDownList("Instructors", null, new {@class= "form-control" })
+</div>

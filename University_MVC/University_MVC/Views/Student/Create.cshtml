@@ -1,0 +1,93 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">
+                                Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="container">
+        <form action="/Student/Create" method="post">
+            <fieldset>
+                <legend>Add New Student</legend>
+                <div class="form-group my-2">
+                    <label for="Name" class="form-label mt-4">Student Name</label>
+                    <input type="text" class="form-control" id="Name" name="name" placeholder="Enter Name of Student">
+                </div>
+                <div class="form-group my-2">
+                    <label for="Age" class="form-label mt-4">Student Age</label>
+                    <input type="number" class="form-control" id="Age" name="age" placeholder="Enter Age of Student">
+                </div>
+                <div class="form-check my-2">
+                    <input class="form-check-input" type="radio" name="gender" id="AgeMale" value="male" checked="">
+                    <label class="form-check-label" for="AgeMale">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check my-2">
+                    <input class="form-check-input" type="radio" name="gender" id="AgFemale" value="female">
+                    <label class="form-check-label" for="AgFemale">
+                        Female
+                    </label>
+                </div>
+                <div class="form-group my-2">
+                    <label for="formFile" class="form-label mt-4">Student Image</label>
+                    <input class="form-control" type="file" id="formFile" name="image">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

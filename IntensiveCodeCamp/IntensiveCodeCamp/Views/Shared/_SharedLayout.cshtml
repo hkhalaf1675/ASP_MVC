@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+@* 
+    -> To create new layout :
+    ----- create new Item : MVC5 Page Layout
+    -> the layout file should start with _
+    
+*@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @*<link href="~/Content/bootstrap.css" rel="stylesheet" />*@
+    @Styles.Render("~/BootstrapStyle")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">
+                            Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Intake">Intakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Track">Trackes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Course">Courses</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        @*
+            there is one RenderBody() and must be One
+            it is the body and the code of any view that use that layout
+        *@
+        @RenderBody()
+    </div>
+    @*@Scripts.Render("~/BootstrapScripts")*@
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @*
+        render section used like render body
+        ---> to write code on it
+        --  mean will eb replaced by the code that on views on section called that section name
+        --> can call that secion on other views by @section sectionName{ code } -> @section ValidationScripts { .... }
+
+        --> can make more than one section
+        --> to make section optional : the second input parameters that repersent the required will be false
+    *@
+    @RenderSection("ValidationScripts", false)
+</body>
+</html>

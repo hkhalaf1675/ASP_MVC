@@ -1,0 +1,124 @@
+﻿
+@model List<University_MVC.Models.Student>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AllStudents</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <main class="container">
+            @*
+                messages appears when the user add or delete or update     
+            *@
+            @{
+                if (TempData["student"] != null)
+                {
+                    var student = TempData["student"] as University_MVC.Models.Student;
+                    <div class="alert alert-dismissible alert-success mt-3">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>@student.Name</strong> was added Successfully .
+                    </div>
+                }
+                if (TempData["DelStudent"] != null)
+                {
+                    <div class="alert alert-dismissible alert-danger mt-3">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>@TempData["DelStudent"].ToString()</strong> Was Deleted Sucessfully.
+                    </div>
+                }
+                if (TempData["UpdStudent"] != null)
+                {
+                    <div class="alert alert-dismissible alert-info mt-3">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        Student with ID
+                        <strong>@TempData["UpdStudent"].ToString()</strong> Was Updated Sucessfully.
+                    </div>
+                }
+            }
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-info">
+                        <th scope="row">Name</th>
+                        <td>Age</td>
+                        <td>Gender</td>
+                        <td>Image</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="table-dark">
+                            <td>@item.Name</td>
+                            <td>@item.Age</td>
+                            <td>@item.Gender</td>
+                            <td>
+                                <img src="~/Images/Male.png" class="w-25" />
+                            </td>
+                            <td>
+                                <a class="btn btn-primary" href="Student/Update/@item.ID">Update</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-danger" href="/Student/Delete/@item.ID">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a class="btn btn-success w-100" href="/Student/Create">Add New Student</a>
+        </main>
+    </div>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

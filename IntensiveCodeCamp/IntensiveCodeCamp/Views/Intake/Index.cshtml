@@ -1,0 +1,65 @@
+﻿@model IEnumerable<IntensiveCodeCamp.Models.Entities.Intake>
+
+@{
+    ViewBag.Title = "All Intakes";
+    Layout = "~/Views/Shared/_SharedLayout.cshtml";
+}
+
+<h2 class="text-center">All Intakes</h2>
+
+
+@if (TempData["AddedIntake"] != null)
+{
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        Round Number <strong>@TempData["AddedIntake"]</strong> was added successfully.
+    </div>
+}
+@if (TempData["UpdatedIntake"] != null)
+{
+    <div class="alert alert-dismissible alert-primary">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        Round Number <strong>@TempData["UpdatedIntake"]</strong> was Upadted successfully.
+    </div>
+}
+@if (TempData["DeletedIntake"] != null)
+{
+    <div class="alert alert-dismissible alert-danger">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        Round Number <strong>@TempData["DeletedIntake"]</strong> was Deleted successfully.
+    </div>
+}
+
+@Html.ActionLink("Create New Intake", "Create", "Intake", new { @class = "btn btn-success w-100" })
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Round)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Round)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Round }, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Round }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,13 @@
+﻿@model IntensiveCodeCamp.Models.Entities.Track
+@{
+    ViewBag.Title = "Track Courses";
+    Layout = "~/Views/Shared/_SharedLayout.cshtml";
+}
+
+<h2>Courses on Track </h2>
+
+@Html.Action("Details", "id", new {id=Model.ID})
+
+<hr />
+
+@Html.Action("TrackCourses", "id", new { id = Model.ID })

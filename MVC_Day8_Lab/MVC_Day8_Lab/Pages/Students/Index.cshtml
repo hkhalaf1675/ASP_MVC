@@ -1,0 +1,64 @@
+﻿@page "{id:int?}"
+@model IndexModel
+@{
+}
+<div class="container">
+    @if(TempData["AddedStudent"] != null)
+    {
+        <div class="alert alert-dismissible alert-success">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>@TempData["AddedStudent"]</strong> was added successfully
+        </div>
+    }
+    @if (TempData["UpdatedStudent"] != null)
+    {
+        <div class="alert alert-dismissible alert-warning">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>@TempData["UpdatedStudent"]</strong> was Updated successfully
+        </div>
+    }
+    @if (TempData["DeletedStudent"] != null)
+    {
+        <div class="alert alert-dismissible alert-danger">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>@TempData["DeletedStudent"]</strong> was Updated successfully
+        </div>
+    }
+    @if (TempData["ErrorDatabase"] != null)
+    {
+        <div class="alert alert-dismissible alert-danger">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>@TempData["ErrorDatabase"]</strong> 
+        </div>
+    }
+    <a class="btn btn-success w-100" asp-page="Create">Create New Student</a>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Birth Date</th>
+            <th>Address</th>
+            <th></th>
+            <th></th>
+        </tr>
+        @foreach(var item in Model.Students)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Fname</td>
+                <td>@item.Lname</td>
+                <td>@item.BirthDate</td>
+                <td>@item.Address</td>
+                <td>
+                    <a class="btn btn-warning" asp-page="Edit" asp-route-id="@item.Id">Edit</a>
+                </td>
+                <td>
+                    <form method="post" >
+                        <input type="submit" class="btn btn-danger" asp-page-handler="Delete" asp-route-id="@item.Id" value="Delete" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

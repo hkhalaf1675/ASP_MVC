@@ -1,0 +1,34 @@
+﻿@page
+@model MVC_Day8_Lab.Pages.Students.EditModel
+@{
+}
+<div class="container">
+    <h1>Create New Student</h1>
+    <form method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <input type="hidden" asp-for="@Model.Student.Id" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Student.Fname"></label>
+            <input asp-for="@Model.Student.Fname" class="form-control" />
+            <span asp-validation-for="@Model.Student.Fname" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Student.Lname"></label>
+            <input asp-for="@Model.Student.Lname" class="form-control" />
+            <span asp-validation-for="@Model.Student.Lname" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Student.Address"></label>
+            <input asp-for="@Model.Student.Address" class="form-control" />
+            <span asp-validation-for="@Model.Student.Address" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Student.BirthDate"></label>
+            <input asp-for="@Model.Student.BirthDate" class="form-control" />
+            <span asp-validation-for="@Model.Student.BirthDate" class="text-danger"></span>
+        </div>
+        <input type="submit" class="btn btn-success w-100" value="Save" />
+    </form>
+</div>

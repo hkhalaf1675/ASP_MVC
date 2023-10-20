@@ -1,0 +1,18 @@
+﻿@model CRUD_MVC_DotFramework.Models.Department
+@{
+    ViewBag.Title = "Create Department";
+}
+
+<h2>Create New Department</h2>
+
+@using (Html.BeginForm())
+{
+    <hr />
+    @Html.Partial("PartialViews/_PartialCreateUpdateView")
+    <hr />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-success w-100 my-2" />
+        </div>
+    </div>
+}

@@ -1,0 +1,12 @@
+﻿@model IEnumerable<School_MVC_DBFirst.Models.Course>
+
+@{
+    Layout = "~/Views/Shared/_PublicLayout.cshtml";
+    ViewBag.Title = "Home";
+}
+
+@Html.Action("Create")
+
+<hr />
+
+@Html.Action("AllCourses")
