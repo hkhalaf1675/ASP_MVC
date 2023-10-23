@@ -2890,11 +2890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Education\\C sharp\\CSharpSoluations\\MVC_WEB\\MVC_Day8_Lab\\MVC_Day8_Lab\\MVC_Day8_Lab.csproj",
+      "projectUniqueName": "F:\\Education\\C sharp\\ASP_MVC\\MVC_Day8_Lab\\MVC_Day8_Lab\\MVC_Day8_Lab.csproj",
       "projectName": "MVC_Day8_Lab",
-      "projectPath": "F:\\Education\\C sharp\\CSharpSoluations\\MVC_WEB\\MVC_Day8_Lab\\MVC_Day8_Lab\\MVC_Day8_Lab.csproj",
+      "projectPath": "F:\\Education\\C sharp\\ASP_MVC\\MVC_Day8_Lab\\MVC_Day8_Lab\\MVC_Day8_Lab.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "F:\\Education\\C sharp\\CSharpSoluations\\MVC_WEB\\MVC_Day8_Lab\\MVC_Day8_Lab\\obj\\",
+      "outputPath": "F:\\Education\\C sharp\\ASP_MVC\\MVC_Day8_Lab\\MVC_Day8_Lab\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

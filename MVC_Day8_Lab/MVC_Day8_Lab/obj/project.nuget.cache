@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/3NsWjsoeTTkJR5BNw32EMLowweQU8kdKlmBnXOzvBuWCT3sX+hWN7defowNvI2+iPhJHXdmLtuOnPI666w01w==",
+  "dgSpecHash": "e/IiqHJR7hEx3jfr+DzIMSceytCBSPuARK2ipqqGydiBQtw/e8rxw0wiepk03BR0y7c2zhv3vFt2uK2drdcCDQ==",
   "success": true,
-  "projectFilePath": "F:\\Education\\C sharp\\CSharpSoluations\\MVC_WEB\\MVC_Day8_Lab\\MVC_Day8_Lab\\MVC_Day8_Lab.csproj",
+  "projectFilePath": "F:\\Education\\C sharp\\ASP_MVC\\MVC_Day8_Lab\\MVC_Day8_Lab\\MVC_Day8_Lab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
