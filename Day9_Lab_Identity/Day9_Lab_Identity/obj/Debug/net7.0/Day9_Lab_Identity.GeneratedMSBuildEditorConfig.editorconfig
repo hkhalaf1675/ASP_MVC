@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Day9_Lab_Identity
 build_property.RootNamespace = Day9_Lab_Identity
-build_property.ProjectDir = F:\Education\C sharp\CSharpSoluations\MVC_WEB\Day9_Lab_Identity\Day9_Lab_Identity\
+build_property.ProjectDir = F:\Education\C sharp\ASP_MVC\Day9_Lab_Identity\Day9_Lab_Identity\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\Education\C sharp\CSharpSoluations\MVC_WEB\Day9_Lab_Identity\Day9_Lab_Identity
+build_property.MSBuildProjectDirectory = F:\Education\C sharp\ASP_MVC\Day9_Lab_Identity\Day9_Lab_Identity
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Account/Login.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Account/Registeration.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Account/Registeration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlcmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Create.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Delete.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Details.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Edit.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Index.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Home/Index.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Home/Privacy.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Create.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Delete.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Details.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Edit.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Index.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Shared/Error.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Shared/_MainNav.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Shared/_MainNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTmF2LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/_ViewImports.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/_ViewStart.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Education/C sharp/CSharpSoluations/MVC_WEB/Day9_Lab_Identity/Day9_Lab_Identity/Views/Shared/_Layout.cshtml]
+[F:/Education/C sharp/ASP_MVC/Day9_Lab_Identity/Day9_Lab_Identity/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e1sf4fcc9j
